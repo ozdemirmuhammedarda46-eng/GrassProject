@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HTML Düzeni</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: blue;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  padding: 10px;
+}
+
+article {
+  float: left;
+  padding-left: 30px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 200px;
+}
+
+nav {
+  float: left;
+  width: 20%;
+  padding-left: 30px;
+  height: 200px;
+  background: #fff1ff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: blue;
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>HTML Sayfa Düzeni</h2>
+<p></p>
+
+<header>
+  <h1>Sayfanın Ana Başlığı</h1>
+</header>
+
+<section>
+  <article>
+  	<h2>Konu Başlığı</h2>
+    <p>Konu ile ilgili bilgiler içeren bir paragraf.</p>
+  </article>
+  
+  <nav>
+    <ul>
+      <li>Başlık 1</li>
+      <li>Başlık 2</li>
+      <li>Başlık 3</li>
+    </ul>
+  </nav>
+</section>
+
+<footer>
+  <p>İletişim Bilgileri</p>
+</footer>
+
+</body>
+</html>
+    
